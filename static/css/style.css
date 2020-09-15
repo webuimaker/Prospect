@@ -1,0 +1,390 @@
+*,
+*::before,
+*::after {box-sizing: border-box;}
+html {width: 100%; min-height: 100%; height:100%; scroll-behavior: smooth;}
+body {font-family: 'Source Sans Pro', sans-serif;  height:100%; color: #2E2706; font-size: 19px; font-weight: 300; padding: 0px; margin: 0px;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { }
+img { max-width: 100%; }
+p { margin: 0; padding: 0; line-height:1.5; }
+a { text-decoration: none; transition:  .2s ease; }
+a:hover { text-decoration: none; }
+ul { list-style: none; }
+.no-pad { padding: 0 !important; }
+.no-spacing{ margin: 0 !important; }
+.no-pad-rt { padding-right: 0!important; }
+.no-pad-lft { padding-left: 0!important; }
+.no-floting { float: none; }
+.hor-center { margin: auto; }
+.hor-spacer-10 { margin-top: 10px; }
+.rel { position: relative; }
+.abs { position: absolute; }
+.txt-center { text-align: center; }
+.mTop25 { margin-top: 25px; }
+.m-100{
+    min-height: 100vh;
+}
+h2{
+    font-size: 24px;
+}
+h3.mainheading{font-size:62px; color:#2a2201; font-weight:900; text-transform:uppercase;}
+h3.subheading{font-size:36px; color:#2a2201; font-weight:900;}
+h3.subheading span{color:#C8D544;}
+
+/**************************************************
+    Buttons
+***************************************************/
+.bg-green{
+    background: #0b544b;
+}
+.btn-green, .btn-shadow{
+    background: #a7e01d;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -1px;
+    padding: 10px 25px;
+    transition: background .5s ease;
+    border: 0px;
+}
+.btn-green:hover, .btn-shadow:hover{
+    background: #282828;
+    color: #fff;
+    transition: background .5s ease;
+}
+.btn-shadow {
+    background: radial-gradient(circle farthest-side, #56ab2f, #7EDF09);   
+}
+.btn-shadow:hover{
+    background: radial-gradient(circle farthest-side, #56ab2f, #000000); 
+}
+
+.btn-shadow.btn-lg{
+    padding: 15px 35px;
+    border-radius: 0px;
+}
+.btn-shadow.btn-xl{
+    padding: 15px 50px;
+    border-radius: 0px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.one {
+    height: 100px;
+    margin: 20px;
+    background: radial-gradient(circle closest-side, #56ab2f, #a8e063);
+  }
+  
+  .two {
+    height: 100px;
+    margin: 20px;
+    background: radial-gradient(circle 80px, #56ab2f, #a8e063);
+  }
+  
+  .three {
+    height: 100px;
+    margin: 20px;
+    background: radial-gradient(circle, #56ab2f, #a8e063 150px);
+  }
+
+  .btn-emp {    
+    border-left: 7px solid #C8D544;
+    background: #282828;
+    font-weight: 600;
+    font-Size: 20px;
+    letter-spacing: -1.1527778px;
+    line-height: 49px;
+    color: #ffffff !important;
+    text-align: center;
+    padding: 15px 25px;
+  
+}
+.btn-emp:hover,
+.btn-emp:focus {
+  box-shadow: inset 11em 0 0 0 #C8D544;
+}
+/**************************************************
+    Top-header
+***************************************************/
+.top-header{
+    border-bottom: 3px solid #C8D544;
+}
+.divider {
+    border-left: 5px solid #C8D544;
+}
+.top-header ul{
+    margin: 0px;
+    padding: 0px;
+}
+.top-header ul li{
+    padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -0.9333333px;
+    color: #000000;
+    border-bottom: 3px solid  transparent;
+    
+  }
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link.active{
+      border-bottom: 3px solid  #1C7B77;
+  }
+  .navbar-light .navbar-nav .nav-item:not(:last-child) {
+    margin-right: 1.2rem;
+}
+.socialIcon {
+  margin: 0px;
+}
+.socialIcon li {
+    margin: 0px 8px;
+}
+.socialIcon li a{
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+}
+.socialIcon li a:hover{
+    color: #7EDF09;
+}
+
+.contactNumber {
+    font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: -0.2555553px;
+  margin: 0px;
+}
+
+.nav-right ul{
+    padding: 0px;
+}
+
+/**************************************************
+    Top-header
+***************************************************/
+.hero {    
+   background: linear-gradient(218deg, #FFFFFF, #FFFFFF, rgba(227,227,227,0.8), #80000000);
+   background-blend-mode: multiply;
+   padding: 40px 0px;
+  }
+  .hero-form{
+    border: dashed 0.71708685px #979797;
+    background: #ffffff;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+    border-bottom: 10px solid #c8d544;
+  }
+
+  .f-input .form-control{
+      font-weight: 300;
+      font-size: 22px;
+    letter-spacing: -0.870065px;
+    color: #2E2706;    
+    border:0px;
+    border-bottom: 1px solid #979797;
+    border-radius: 0px;
+    background: #fcfcfc;
+
+  }
+  .hero-form{
+      background: #FAFAFA;
+  }
+   .form-top{
+    background: #fff;
+  }
+
+  .hero-form label{
+        color: #2e2706;
+        font-size: 22.37311px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.87006533px;
+  }
+  .bg-ee{
+      background: #EEEEEE;
+  }
+
+  .hero-content h1{
+    /* background: linear-gradient(180deg, #80747474, #80000000);
+    background-blend-mode: overlay; */
+  }
+
+  .hero-content h2{
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: -3.1125002px;
+  }
+
+  
+  .hero-content p{
+    color: #292e06;
+    font-size: 37px;
+    font-weight: 300;
+    line-height: 53px;
+    letter-spacing: -2.3055556px;
+  }
+
+  .section-title{
+    color: #2e2706;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 91px;
+    letter-spacing: -2.8px;
+  }
+
+
+
+
+/**************************************************
+    Hero Below
+***************************************************/
+#herobelow{padding:70px 0px 40px;}
+/* #herobelow h2{
+    color: #2e2706;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 91px;
+    letter-spacing: -2.8px;
+} */
+#herobelow h3{    
+  color: #2e2706;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: -1.6333333px;
+  border-bottom: solid 3px #292e06;
+  padding-bottom:15px;
+}
+
+#herobelow h3 span{color:#C8D544;}
+#herobelow ul{padding:0;}
+#herobelow li{list-style:disc; list-style-position:inside; line-height:1.3; margin-bottom:15px;}
+#herobelow li strong{font-weight:600;}
+#herobelow .btn-shadow{padding:22px 60px; font-size:28px; font-weight:700; display:inline-block;
+    letter-spacing: -1px;}
+
+
+
+/**************************************************
+    Program Services
+***************************************************/
+#programservices{padding:70px 0; background:url(../images/service.png) no-repeat #ececec;}
+#programservices h3, #eventsection h3{font-size:62px; color:#000000; font-weight:900;}
+#programservices ul{padding:0; margin-top:20px;}
+#programservices li{font-size:22px; color:#000; list-style:disc; list-style-position:inside; line-height:1.3; margin-bottom:8px;}
+#programservices li strong{font-weight:600;}
+
+#programservices .programboxes{margin-top:35px;}
+#programservices .programboxes .boxcol{background:#fff; padding:20px 25px; margin-bottom:25px;
+-webkit-box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);
+-moz-box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);
+box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);}
+#programservices .programboxes .boxcol h4{color:#1C7B77; font-size:24px; font-weight:700;}
+#programservices .programboxes .boxcol p{line-height:1.2;}
+#programservices .boxcol .botmlink{margin-top:15px; font-size:12px;}
+#programservices .boxcol .botmlink a{margin-right:10px; 
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: -0.691667px;
+    Color: #1C7B77;
+}
+#programservices .btn-green{padding:24px; font-size:28px; font-weight:900; min-width:271px; display:inline-block;}
+
+/**************************************************
+    Event Services
+***************************************************/
+#eventsection{padding:70px 0;}
+#eventsection h3{color:#2a2201; text-transform:uppercase;}
+#eventsection .eventbox{border:1px solid #979797; padding:30px 13px 0; position:relative; min-height:490px;}
+#eventsection .eventbox h4{color:#2E2706; font-weight:700; font-size:40px; line-height:1;}
+#eventsection .eventbox h5{font-size:12px; font-weight:700; color:#2E2706;}
+#eventsection .eventbox p{font-size:12px; font-weight:400; color:#2E2706; margin-bottom:12px;}
+#eventsection .eventbox p a{color:#a8a597; font-size:9px; font-weight:200;}
+#eventsection .eventbox p.bigtxt{font-weight:700; color:#2E2706; font-size:20px;}
+#eventsection .datesection{position:absolute; right:0; bottom:0; border:1px solid #bababa; border-right:0; padding:15px 30px; text-align:center; font-size:40px; font-weight:700; color:#2E2706; line-height:1;}
+#eventsection .datesection span{font-size:22px;}
+
+
+
+
+/**************************************************
+    Newsroom Services
+***************************************************/
+.newsroom{padding:70px 0;}
+.newsroom .subtxt{color:#b0aea1; font-weight:300; font-size:15px;}
+.newsroom h4{font-size:22px; font-weight:700; color:#2E2706;}
+.newsroom p{font-size:16px; font-weight:300; color:#6e6a51;}
+
+/**************************************************
+    Prospect Services
+***************************************************/
+.prospectsection{padding:45px 0; background:#f4f4f4;}
+.prospectsection p{font-weight:300; color:#2E2706; line-height:1.3;}
+.prospectsection strong{font-weight: 900;}
+.prospectsection ul{margin:0; padding:0;}
+.prospectsection li{list-style:disc; list-style-position:inside; line-height:1.3; margin-bottom:8px;}
+.prospectsection li strong{font-weight:900;}
+.prospectsection .btn-green{padding:24px; font-size:28px; font-weight:900; min-width:271px; display:inline-block;}
+
+/**************************************************
+    Hiring Services
+***************************************************/
+.videosection, .slidingbanner{padding:45px 0;}
+.bgcolor{background:#f2f2f2;    
+    background: rgb(242,244,247);
+    background: linear-gradient(-90deg, rgba(255,255,255,1) 35%, rgba(229,229,229,1) 35%);
+}
+.bgcolor img{
+    margin-bottom: -50px;
+}
+
+.hiringcontent h3{margin-top:-100px;}
+.hiringcontent img{margin-top:-440px;}
+.hiringcontent p{color:#A2A2A2; font-size:22px; line-height:1.3; font-weight:400; margin-bottom:25px;}
+
+/**************************************************
+    Prospect Services
+***************************************************/
+.prospectservices{padding:25px 0; background: #fbfbfb;}
+.logobtm{border-bottom:1px solid #979797;}
+.bdright{border-right:1px solid #979797;}
+.prospectservices ul{margin:0; padding:0;}
+.prospectservices li{line-height:1.3; font-size:14px; color:#292E06; font-weight:400;}
+.prospectservices li a{font-size:14px; color:#292E06; font-weight:400;}
+.prospectservices li.bdrbtm{border-bottom:1px solid #979797; padding-bottom:5px; margin-bottom:5px;}
+
+/**************************************************
+    Footer Services
+***************************************************/
+.footer{background:#202020; padding:15px 0;}
+.footer li{display:inline-block; margin:0px 5px;}
+
+.footer .socialIcon  li a{
+    color: #fff;
+    font-size: 25px;
+}
+.chat-icon {
+    color: #fff;
+    background: #868686;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 2em;
+}
+
+.footer .socialIcon li a:hover {
+    color: #7EDF09;
+}

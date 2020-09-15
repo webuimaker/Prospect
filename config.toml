@@ -1,0 +1,103 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Prospect: Break Barriers. Employ Change"
+
+
+[params]
+logo = "images/logo.jpg"
+login = "#"
+donate = "#"
+# google map
+gmapAPI = ""
+mapLatitude = " "
+mapLongitude = " "
+mapMarker = " "
+# down arrow in top header
+downArrow = "#"
+
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+
+
+
+  # navigation
+  [menu]
+      
+    [[menu.nav]]
+    name = "Job Skills"
+    URL = "/job-skills"
+    weight = 1
+    [[menu.nav]]
+    name = "Training"
+    URL = "/training"
+    weight = 2
+    [[menu.nav]]
+    name = "Access  Technology"
+    URL = "/access-technology"
+    weight = 3
+    [[menu.nav]]
+    name = "PDD"
+    URL = "/pdd"
+    weight = 4
+    [[menu.nav]]
+    name = "Jobs"
+    URL = "/jobs"
+    weight = 5
+    [[menu.nav]]
+    name = "Locations"
+    URL = "/lLocations"
+    weight = 6
+
+
+    # Quote Button
+    [params.quoteBtn]
+    enable = true
+    btnText = "Employer Services"
+    btnURL = "#"
+    klass = "btn-emp"
+
+
+     # social icon
+    [[params.socialIcon]]
+    icon = "fa-facebook"
+    URL = "#"
+
+    [[params.socialIcon]]
+    icon = "fa-twitter"
+    URL = "#"
+
+    [[params.socialIcon]]
+    icon = "fa-linkedin"
+    URL = "#"
+
+    [[params.socialIcon]]
+    icon = "fa-snapchat"
+    URL = "#"
+    [[params.socialIcon]]
+    icon = "fa-youtube"
+    URL = "#"
+
+     # Contact Number
+    [[params.contactNumber]]
+    location = "CALGARY"
+    number = "1.403.123.4567"
+
+    [[params.contactNumber]]
+    location = "EDMONTON"
+    number = "1.403.123.4567"
+
+
+    
+     # Image gallery
+    [[params.imageGallery]]
+    image = "images/foot-1.png"
+    alt = "image"
+    [[params.imageGallery]]
+    image = "images/foot2.png"
+    alt = "image"
+    [[params.imageGallery]]
+    image = "images/foot-3.png"
+    alt = "image"
+    [[params.imageGallery]]
+    image = "images/foot-4.png"
+    alt = "image"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="211px" height="56px" viewBox="0 0 211 56" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <radialGradient gradientUnits="objectBoundingBox" cx="50%" cy="0%" fx="50%" fy="0%" r="366.60623%" gradientTransform="translate(0.5,0),scale(0.26540285,1),rotate(123.01849),scale(1,0),translate(-0.5,-0)" id="gradient_1">
+      <stop offset="0%" stop-color="#7EDF09" stop-opacity="0.5019608" />
+      <stop offset="100%" stop-color="#D2FF00" />
+    </radialGradient>
+    <path d="M0 0L211 0L211 56L0 56L0 0Z" id="path_1" />
+  </defs>
+  <g id="Rectangle">
+    <use stroke="none" fill="#1C7B77" xlink:href="#path_1" fill-rule="evenodd" />
+    <use stroke="none" fill="url(#gradient_1)" xlink:href="#path_1" fill-rule="evenodd" />
+  </g>
+</svg>

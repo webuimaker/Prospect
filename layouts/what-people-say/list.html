@@ -1,0 +1,25 @@
+{{ define "main" }}    
+  <div class="container-fluid h-100"> 
+      <div class="row h-100">
+        <div class="col-12 mb-4">
+          <h1 class="text-green my-5 text-left">{{.Title}} </h1> 
+        </div>        
+        {{if .Params.lists.enable  }}
+          {{ range  .Params.lists.items }}
+            
+            <div class="col-md-4 col-lg-4 mb-5 mb-md-0 pepole-say">             
+              <p>"{{.comments | safeHTML}}" - {{.name}}</p>
+            </div>
+          {{end}}          
+        {{end}}
+          <div class="col-12">
+            {{ .Content  |  safeHTML }}
+          </div>
+        </div>
+
+      </div>
+
+  
+
+{{ end }}   
+
