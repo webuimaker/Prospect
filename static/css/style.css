@@ -174,9 +174,9 @@ h3.subheading span{color:#C8D544;}
     Top-header
 ***************************************************/
 .hero {    
-   background: linear-gradient(218deg, #FFFFFF, #FFFFFF, rgba(227,227,227,0.8), #80000000);
+   background: linear-gradient(218deg, #FFFFFF, #FFFFFF, rgba(227,227,227,0.6), #80000000);
    background-blend-mode: multiply;
-   padding: 40px 0px;
+   padding: 0px 0px 60px;
   }
   .hero-form{
     border: dashed 0.71708685px #979797;
@@ -279,17 +279,24 @@ h3.subheading span{color:#C8D544;}
 /**************************************************
     Program Services
 ***************************************************/
-#programservices{padding:70px 0; background:url(../images/service.png) no-repeat #ececec;}
+#programservices{padding:70px 0; background:url(../images/service.png) no-repeat #ececec; background-size: cover;}
 #programservices h3, #eventsection h3{font-size:62px; color:#000000; font-weight:900;}
 #programservices ul{padding:0; margin-top:20px;}
 #programservices li{font-size:22px; color:#000; list-style:disc; list-style-position:inside; line-height:1.3; margin-bottom:8px;}
 #programservices li strong{font-weight:600;}
 
 #programservices .programboxes{margin-top:35px;}
+
+.programboxes .row-eq-height{
+    display: flex;
+    flex-wrap: wrap;
+}
 #programservices .programboxes .boxcol{background:#fff; padding:20px 25px; margin-bottom:25px;
 -webkit-box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);
 -moz-box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);
-box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);}
+box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);
+height: 100%;
+}
 #programservices .programboxes .boxcol h4{color:#1C7B77; font-size:24px; font-weight:700;}
 #programservices .programboxes .boxcol p{line-height:1.2;}
 #programservices .boxcol .botmlink{margin-top:15px; font-size:12px;}
@@ -364,6 +371,48 @@ box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);}
 .prospectservices li a{font-size:14px; color:#292E06; font-weight:400;}
 .prospectservices li.bdrbtm{border-bottom:1px solid #979797; padding-bottom:5px; margin-bottom:5px;}
 
+
+/**************************************************
+    Donate Section Services
+***************************************************/
+.donatesection{ min-height:180px; padding:27px 0px 27px; 
+    background: url(../images/donate-bg.png) no-repeat 100% ;
+
+    position: relative;
+}
+.donatesection:before{
+    content: "";
+    background: url(../images/fade-donate.png) no-repeat 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    /* top: 0px; */
+    width: 95%;
+    bottom: 0px;
+    opacity: 0.2;
+}
+.donate-container{
+    z-index: 9;
+}
+.donatesection h3{font-size:24px; color:#292E06; font-weight:900;}
+.donatesection p{font-size:20px; font-weight:400; line-height:1.2;}
+.donatesection .form-control{border:4px solid #fff; background:none; border-radius:0; text-align:center;}
+.donatesection .btn-donate{background:#fff; border:0; border-radius:0; width:100%; min-height:38px; font-weight:900; font-size:18px;}
+
+.donatesection .form-control::-webkit-input-placeholder { /* Edge */
+  color:#fff;
+}
+
+.donatesection .form-control:-ms-input-placeholder { /* Internet Explorer */
+  color:#fff;
+}
+
+.donatesection .form-control::placeholder {
+  color:#fff;
+}
+.donatebtm{width:100%; float:left; margin-top:-10px; position: relative;}
+
 /**************************************************
     Footer Services
 ***************************************************/
@@ -388,3 +437,32 @@ box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);}
 .footer .socialIcon li a:hover {
     color: #7EDF09;
 }
+
+
+/**************************************************
+    Responsive Layout
+***************************************************/
+@media only screen and (min-width:969px) and (max-width:1024px){
+    #eventsection .eventbox{height:560px;}	
+    }
+    
+    @media screen and (max-width:1023px) {
+    #eventsection .datesection{padding:5px 10px; border-bottom:0; font-size:30px;}
+    #eventsection .eventbox h4{font-size:24px;}
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+      .hero-content h2{font-size:30px; line-height:30px;}
+      .section-title{font-size:32px; line-height:1.3;}
+      #herobelow h3{font-size:28px; line-height:1.3;}
+      #eventsection h3{font-size:32px; line-height:1.3;}
+      #eventsection{padding:30px 0;}
+      #eventsection .eventbox{min-height:inherit; margin-bottom:20px;}
+      .donatesection{background:#a4dc1f;}
+    }
+    
+    
+    @media screen and (max-width:479px){
+    
+    }

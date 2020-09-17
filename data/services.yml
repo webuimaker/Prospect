@@ -1,0 +1,56 @@
+enable: true
+lists:
+  - title: SKILL GAIN
+    body: "Would you benefit <strong>by</strong> increasing your ability to write and navigate common workplace documents? Would you be more <strong>employable if you</strong> build your reading and math literacy? Do you struggle with computers and want to learn how to use them both to apply for jobs and on the job?"
+    tags:
+      - name: "#technology" 
+        url: 
+      - name: "#skills" 
+        url:
+  - title: ENTREPRENEURS WITH DISABILITIES
+    body: "Available at no <strong>cost</strong>.  Designed for people who live in the Metro Edmonton Area, with a permanent disability <strong>or chronic condition</strong> who have a viable business idea they’re passionate about, are ready, willing and motivated to run a business, and are creative, resourceful and ready for change."
+    tags:
+      - name: "#disabilityservices " 
+        url: 
+      - name: "#edmonton " 
+        url:     
+  - title: Career Links
+    body: "Career Links provides <strong>fast-track</strong> employment placement supports for individuals experiencing challenges to workforce participation as a result of <strong>mental health illness</strong> or issues, including those who may have concurrent substance abuse disorders."
+    tags:
+      - name: "#placement" 
+        url: 
+      - name: "#mentalhealth " 
+        url:    
+  - title: Forces @ Work
+    body: "Forces@WORK is an <strong>employment</strong> placement service offered through Prospect Human Services. We help ill and injured Canadian Armed <strong>Forces veterans, medical</strong> releases, reservists and family members of serving personnel find and keep good civilian jobs that will maintain their quality of life."
+    tags:
+      - name: "#forces" 
+        url: 
+      - name: "#edmonton " 
+        url: 
+      - name: "#calgary " 
+        url: 
+      - name: "#careers " 
+        url:   
+  - title: ARTRECRUITS
+    body: "ArtRecruits is an <strong>award-winning</strong> employment program offered at Prospect’s Studio C. The initiative is an art-based, workplace skill-building <strong>program that helps</strong> adults with mental health barriers achieve their employment goals. ArtRecruits also offers businesses artistic teambuilding experiences, helping them broaden their hiring perspective on diversity and inclusive workplaces."
+    tags:  
+  - title: PDD 
+    body: "We support adults <strong>with</strong> developmental disabilities in experiencing an enhanced quality of life through increased workforce and community <strong>participation</strong>."
+    tags:  
+  - title: ROCKYVIEW 
+    body: "ArtRecruits is an <strong>award-winning</strong> employment program offered at Prospect’s Studio C. The initiative is an art-based, workplace skill-building <strong>program that helps</strong> adults with mental health barriers achieve their employment goals. ArtRecruits also offers businesses artistic teambuilding experiences, helping them broaden their hiring perspective on diversity and inclusive workplaces."
+    tags:  
+  - title: YOUTH ASSESSMENT SERVICES 
+    body: "We support adults <strong>with</strong> developmental disabilities in experiencing an enhanced quality of life through increased workforce and community <strong>participation</strong>."
+    tags:
+      - name: "#youth" 
+        url: 
+      - name: "#calgary " 
+        url:  
+  - title: STUDIO C 
+    body: "Studio C is <strong>Prospect’s</strong> award-winning Collaborative Art Centre; a public studio and gallery that uses art to equip <strong>people who face</strong> barriers to employment. Through our services, participants gain skills and confidence for employment opportunities. Studio C promotes inclusion and empowers the community."
+    tags:   
+  - title: THE WORX 
+    body: "The WORX is <strong>an</strong> employment centre concept, designed specifically to increase access to job search support tools and <strong>services for persons</strong> with disabilities. <br> <br> But what really makes The WORX different from other specialty employment centres is the philosophy behind our approach."
+    tags:  

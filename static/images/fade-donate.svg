@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1728px" height="182px" viewBox="0 0 1728 182" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <radialGradient gradientUnits="objectBoundingBox" cx="50%" cy="0%" fx="50%" fy="0%" r="530.45184%" gradientTransform="translate(0.5,0),scale(1,0.5824176),rotate(95.73631),scale(1,0),translate(-0.5,-0)" id="gradient_1">
+      <stop offset="0%" stop-color="#7EDF09" stop-opacity="0.5019608" />
+      <stop offset="100%" stop-color="#D2FF00" />
+    </radialGradient>
+    <path d="M0 0L106 60.6667L106 182L0 121.333L0 0Z" transform="matrix(1 0 0 -1 1622 182)" id="path_1" />
+  </defs>
+  <g id="Rectangle-Copy-11">
+    <use stroke="none" fill="#71BA1D" xlink:href="#path_1" fill-rule="evenodd" />
+    <use stroke="none" fill="url(#gradient_1)" xlink:href="#path_1" fill-rule="evenodd" />
+  </g>
+  <path d="M0 0L1622 0L1622 92L0 92L0 0Z" transform="matrix(1 0 0 -1 0 182)" id="Rectangle-Copy-10" fill="#71BA1D" fill-rule="evenodd" stroke="none" />
+</svg>
