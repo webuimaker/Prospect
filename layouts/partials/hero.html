@@ -1,11 +1,13 @@
 {{ "<!-- Hero -->" | safeHTML }}
-<section class="hero">
+<section class="hero" >
    {{ partial "navigation.html" . }}
+   {{if .Params.hero.enable }} 
+   {{if  .IsHome }}
     <div class="container">
         <div class="row">
             <div class=" {{if .Params.hero.form.enable }}  col-md-6 col-lg-6   {{else }} col-md-12 col-lg-12 text-center {{end}} align-items-center align-middle my-auto align-items-center align-self-center">
                 <div class="hero-content">
-                    <h1> {{if .Params.hero.secHeading }} {{.Params.hero.secHeading | safeHTML }} {{end }} {{if .Params.hero.image }} <img src="{{ .Params.hero.image | absURL}} " alt="Prospect"> {{end }}
+                    <h1> {{if .Params.hero.secHeading }} {{.Params.hero.secHeading | safeHTML }} {{end }} {{if .Params.hero.secHeadingImage }} <img src="{{ .Params.hero.secHeadingImage | absURL}} " alt="Prospect"> {{end }}
                       
                       </h1>
                     <h2>{{.Params.hero.subHeading | safeHTML}}</h2>
@@ -22,4 +24,17 @@
         </div>
 
     </div>
+
+    {{else}}
+      <section class="innerhero" style="background: url({{ .Params.hero.image | absURL}});">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+            <div class="headinginner" style="color:{{ .Params.hero.headingColor}}">Military<br> employment services</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{end}}
+    {{end}}
 </section>

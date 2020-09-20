@@ -1,0 +1,79 @@
+{{ define "main" }}
+  {{ "<!-- Header -->" | safeHTML }}
+  {{ partial "header.html" . }}
+
+  {{ "<!-- Hero -->" | safeHTML }}
+  {{ partial "hero.html" . }} 
+
+  
+    <!-- Inner-below -->
+    <section class="innerherobtm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="toptabs">
+              <a href="#">INNER MENU #1</a> <a href="#">ELIGIBILITY</a> <a href="#">HIRING VETS</a> <a href="#">EVENTS</a> 
+            </div>
+            <h3 class="innersubheading">Through our groundbreaking Forces@Work program we<br> support members of the Canadian Forces to transition into the<br> civilian workforce</h3>
+            <p>Prospect Human Services is an organization backed by over 50 years of experience in managing transitions to civilian employment. We started out serving personnel of Canada’s military by offering a place for World War II veterans and veterans of the Korean War to connect to the community and the workforce.</p>
+            <p>Over time, the demand for employment supports shifted to other populations and Prospect developed a reputation as a leader and catalyst in the collective effort required to build a productive and diverse workforce. That being said, our understanding of the unique challenges associated with transitioning from military to civilian life has defined a significant part of who we are.</p>
+            <p>In 2010, we reconnected with the challenges military personnel often face in transitioning to civilian employment. We quickly recognized how our employment model could fill a critical gap in the existing transition services for Canadian Forces (CF) personnel.</p>
+            
+            
+                {{if .Params.video.enable }}
+
+                {{ "<!-- video -->" | safeHTML }}
+                
+                {{ partial "video.html" . }}
+
+                {{ "<!-- video -->" | safeHTML }}
+            {{end}}
+            
+            <div class="programsection">
+              <h2 class="section-title mb-4">PROGRAMS AND SERVICES</h2>
+              
+              <div class="programboxes">
+                <div class="row">
+                  <div class="col-md-6">
+              <div class="boxcol">
+                <h4>SKILL GAIN</h4>
+                <p>Would you benefit by increasing your ability to write and navigate common workplace documents? Would you be more employable if you build your reading and math literacy? Do you struggle with computers and want to learn how to use them both to apply for jobs and on the job?</p>
+                <div class="botmlink">
+                  <a href="#">#technology</a> <a href="#">#skills</a>
+                </div>
+              </div>
+            </div>
+            
+                  <div class="col-md-6">
+              <div class="boxcol">
+                <h4>ENTREPRENEURS WITH DISABILITIES</h4>
+                <p>Available at no cost. Designed for people who live in the Metro Edmonton Area, with a permanent disability or chronic condition who have a viable business idea they’re passionate about, are ready, willing and motivated to run a business, and are creative, resourceful and ready for change.</p>
+                <div class="botmlink">
+                  <a href="#">#disabilityservices</a> <a href="#">#edmonton</a>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- Inner-below -->
+      {{ "<!-- few-teams -->" | safeHTML }} 
+      {{ partial "few-teams.html" . }}
+
+      {{ "<!-- inner-events -->" | safeHTML }} 
+      {{ partial "inner-events.html" . }}
+
+      
+      
+
+
+  {{ "<!-- image-gallery -->" | safeHTML }} 
+  {{ partial "image-gallery.html" . }}
+  {{ partial "donate.html" . }}
+  {{ "<!-- donate -->" | safeHTML }}
+
+{{ end }}

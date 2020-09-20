@@ -7,22 +7,25 @@
     
     
     {{ "<!-- Hero -->" | safeHTML }}
-    
-    {{ partial "hero.html" . }}
-
-    {{ "<!-- Hero -->" | safeHTML }}
+  
+        {{ partial "hero.html" . }} 
 
     {{ "<!-- hero-below -->" | safeHTML }}
-    
-    {{ partial "hero-below.html" . }}
+    {{if .Params.fulfillingJobs.enable }}
+        {{ partial "hero-below.html" . }}
+    {{end}}
 
     {{ "<!-- hero-below -->" | safeHTML }}
-
-    {{ "<!-- programs-services -->" | safeHTML }}
+    {{if .Params.programServices.enable }} 
+        {{ "<!-- programs-services -->" | safeHTML }}
+        {{ partial "programs-services.html" . }}
+        
+    {{end}}
     
-    {{ partial "programs-services.html" . }}
 
     {{ "<!-- programs-services -->" | safeHTML }}
+
+    {{if .Params.events.enable }}
 
     {{ "<!-- event-workshops -->" | safeHTML }}
     
@@ -30,41 +33,62 @@
 
     {{ "<!-- event-workshopss -->" | safeHTML }}
 
-    {{ "<!-- donate -->" | safeHTML }}
+    {{end}}
+
+    {{if .Params.donate.enable }}
+
+        {{ "<!-- donate -->" | safeHTML }}
+        
+        {{ partial "donate.html" . }}
+
+        {{ "<!-- donate -->" | safeHTML }}
+
+    {{end}}
+
+    {{if .Params.newsroom.enable }}
+
+        {{ "<!-- newsroom -->" | safeHTML }}
+        
+        {{ partial "newsroom.html" . }}
+
+        {{ "<!-- newsroom -->" | safeHTML }}
+    {{end}}
+
+    {{if .Params.howProspectDoes.enable }}
+        {{ "<!-- how-prospect-does -->" | safeHTML }}
+        
+        {{ partial "how-prospect-does.html" . }}
+
+        {{ "<!-- how-prospect-does -->" | safeHTML }}
+    {{end}}
+
+    {{if .Params.video.enable }}
+
+        {{ "<!-- video -->" | safeHTML }}
+        
+        {{ partial "video.html" . }}
+
+        {{ "<!-- video -->" | safeHTML }}
+    {{end}}
+
+    {{if .Params.hiring.enable }}
+
+        {{ "<!-- hiring -->" | safeHTML }}
+        
+        {{ partial "hiring.html" . }}
+
+        {{ "<!-- hiring -->" | safeHTML }}
+    {{end}}
     
-    {{ partial "donate.html" . }}
+    {{if .Params.imageGallery.enable }}
 
-    {{ "<!-- donate -->" | safeHTML }}
-
-    {{ "<!-- newsroom -->" | safeHTML }}
+        {{ "<!-- image-gallery -->" | safeHTML }}
     
-    {{ partial "newsroom.html" . }}
-
-    {{ "<!-- newsroom -->" | safeHTML }}
-
-    {{ "<!-- how-prospect-does -->" | safeHTML }}
     
-    {{ partial "how-prospect-does.html" . }}
+        {{ partial "image-gallery.html" . }}
 
-    {{ "<!-- how-prospect-does -->" | safeHTML }}
-
-    {{ "<!-- video -->" | safeHTML }}
-    
-    {{ partial "video.html" . }}
-
-    {{ "<!-- video -->" | safeHTML }}
-
-    {{ "<!-- hiring -->" | safeHTML }}
-    
-    {{ partial "hiring.html" . }}
-
-    {{ "<!-- hiring -->" | safeHTML }}
-
-    {{ "<!-- image-gallery -->" | safeHTML }}
-    
-    {{ partial "image-gallery.html" . }}
-
-    {{ "<!-- image-gallery -->" | safeHTML }}
+        {{ "<!-- image-gallery -->" | safeHTML }}
+    {{end}}
 
 
 {{ end }}

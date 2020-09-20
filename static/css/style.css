@@ -210,6 +210,102 @@ h3.subheading span{color:#C8D544;}
         line-height: 28px;
         letter-spacing: -0.87006533px;
   }
+
+  .custom-radio input[type="radio"], .custom-radio input[type="checkbox"], .donate-radio input[type="radio"]{
+     visibility: hidden;      
+     display: none;
+  }
+  .custom-radio  label, .donate-radio label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #a1a1a1;
+    line-height: 21px;
+    letter-spacing: normal;
+    padding: .375rem .45rem;
+    border:2px solid #ced4da;
+    transition: all 0.2s ease;
+  }
+
+  .custom-radio  [type="radio"]:checked + label, .custom-radio input[type="checkbox"]:checked + label {
+      border: 2px solid #c8d544;
+      color: #3c3c3c;
+  }
+
+
+  /* .radio__input  input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .radio__control {
+        display: block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        border: 0.1em solid currentColor;
+      } */
+
+
+/* 
+      .radio__input     [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.radio__input   [type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+
+   
+}.radio__input   
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    
+}
+.radio__input  [type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    
+}
+.radio__input   [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.radio__input   
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border: 2px solid green;
+} */
+  
+
   .bg-ee{
       background: #EEEEEE;
   }
@@ -360,6 +456,38 @@ height: 100%;
 .hiringcontent img{margin-top:-440px;}
 .hiringcontent p{color:#A2A2A2; font-size:22px; line-height:1.3; font-weight:400; margin-bottom:25px;}
 
+.videosection{
+    position: relative;
+}
+.play-btn{
+    line-height: 220px;
+    width: 217px;
+    height: 217px;
+    background: #a5dd1c;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+    z-index: 99;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.play-btn:hover{
+    color: #56ab2f;
+}
+
+
+
+  
+
 /**************************************************
     Prospect Services
 ***************************************************/
@@ -400,6 +528,33 @@ height: 100%;
 .donatesection .form-control{border:4px solid #fff; background:none; border-radius:0; text-align:center;}
 .donatesection .btn-donate{background:#fff; border:0; border-radius:0; width:100%; min-height:38px; font-weight:900; font-size:18px;}
 
+.donate-radio .input-group, .donate-radio label{
+    border:4px solid #fff; background:none; border-radius:0; text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+.donate-radio .input-group input{ 
+    border: 0px;
+    flex: none;
+    width: calc(100% - 40px);
+    display: inline-block;
+    text-align: left;
+    padding: 0px;
+    border-bottom: 1px solid #fff;
+    height: 20px;
+}
+.donate-radio .input-group-prepend span{ background: transparent; border: 0px; color: #fff; padding-right: 5px; padding-left: 3px; height: 30px;}
+.donate-radio label{
+    color: #fff;
+    width: 100%;
+}
+
+.donate-radio input[type="radio"]:checked + label {
+    border-color: #71BA1D;
+}
+
+
+
 .donatesection .form-control::-webkit-input-placeholder { /* Edge */
   color:#fff;
 }
@@ -438,6 +593,52 @@ height: 100%;
     color: #7EDF09;
 }
 
+
+
+
+/**************************************************
+    Inner Page Starts
+***************************************************/
+.innerhero{background:url(../images/bg-inner.jpg) no-repeat; min-height:500px; border-bottom:2px solid #ace41a; background-size:cover; margin-top:-165px;}
+.innernav{ position:relative;  z-index:1;  background: rgba(216,216,216,0.2); margin-bottom: 0px !important;}
+.innernav .navbar-light .navbar-nav .nav-link{color:#fff;}
+ .innernav .socialIcon li a{color:#fff;}
+ .innernav .socialIcon li a:hover {
+    color: #7EDF09;
+}
+.innernav .contactNumber{color:#fff;}
+.innernav .btn-emp{background:#232323;}
+.headinginner{margin-top:280px; font-size:90px; font-weight:600; color:#A9E21B; line-height:1; text-shadow: 0px 2px 4px rgba(0,0,0,0.5);}
+
+.innerherobtm{padding:22px 0;}
+.innerherobtm .toptabs{background:#aae314; padding:22px; margin-bottom:20px;}
+.innerherobtm .toptabs a{font-size:24px; font-weight:700; color:#292E06; padding:0px 16px;}
+.innerherobtm .innersubheading{color:#292E06; font-size:32px; font-weight:300;}
+.innerherobtm p{margin-bottom:20px;}
+
+.programboxes .boxcol{background:#fff; padding:20px 25px; margin-bottom:25px;
+-webkit-box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);
+-moz-box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);
+box-shadow: 6px 2px 16px 0px rgba(166,192,188,1);}
+.programboxes .boxcol h4{color:#1C7B77; font-size:24px; font-weight:700;}
+.programboxes .boxcol p{line-height:1.2;}
+.boxcol .botmlink{margin-top:15px; font-size:12px;}
+.boxcol .botmlink a{margin-right:10px; 
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: -0.691667px;
+    Color: #1C7B77;
+}
+.newsroom .positiontxt{font-size:15px; color:#2E2706;}
+.calendarevents{padding:30px 0;}
+.eventlist{border:1px solid #cfcfcf; width:100%; float:left; position:relative; margin-bottom:25px;}
+.eventdate{background:#157c78; width:15%; float:left; text-align:center; font-size:90px; color:#fff; font-weight:700; line-height:1; padding:20px 0;}
+.eventdate span{font-size:40px; display:block;}
+.eventdetail{width:80%; float:left; padding:10px;}
+.eventdetail h3{font-weight:700; color:#292E06; font-size:30px; margin-bottom:0;}
+.eventsocial{position:absolute; right:0; top:20px; width:auto; padding-right:15px;}
+.eventsocial ul{margin:0; padding:0;}
+.eventsocial li{margin-bottom:10px;}
 
 /**************************************************
     Responsive Layout
